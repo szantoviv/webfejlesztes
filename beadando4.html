@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hercules</title>
+    <link rel="icon" href="favicon.jpeg" type="image/x-icon">
+    <link href="styles.css" rel="stylesheet">
+    <script src="jquery-3.7.1.js"></script>
+    <script src="jquery-validation-1.19.5/dist/jquery.validate.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("#myform").validate({
+                rules: {
+                    veznev: "required",
+                    kernev: "required",
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    telefon: {
+                        required: true,
+                    },
+                    feltetel: {
+                        required: true,
+                    },
+                    ertesit: {
+                        required: true,
+                    },
+                },
+                messages: {
+                    veznev: " Írd be a keresztneved!",
+                    kernev: " Írd be a vezetékneved!",
+                    telefon: " Kérlek valós telefonszámot adj meg!",                   
+                    email: " Kérlek valós email címet adj meg!",
+                    feltetel: " Kérlek fogadd el a feltételeinket!",
+                    ertesit: "Kérlek válassz egyet!"
+                },
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="logo"><img src="kepekbeadando/logo.jpg" alt="a cég logója"></div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Rólunk</a></li>
+                <li class="dropdown">
+                    <a href="" class="dropmenu">Gépeink</a>
+                    <div class="dropdown-content">
+                        <a href="epitoipar.html">Építőipari Gépek</a>
+                        <a href="mezogazd.html">Mezőgazdasági Gépek</a>
+                        <a href="kerteszet.html">Kertészeti Gépek</a>
+                    </div>
+
+                </li>
+                <li><a href="beadando3.html">Elérhetőség</a></li>
+                <li><a id="active" href="#">Fontos tudnivalók</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <article>
+            <h2>Bérlési Feltételek</h2>
+            <h3>Szükséges:</h3>
+            <ul>
+                <li>személyi igazolvány</li>
+                <li>lakcímkártya</li>
+                <li>telefonszám</li>
+                <li>saját névre szóló forgalmi engedély</li>
+            </ul>
+            <hr>
+        </article>
+        <article>
+            <h2>Bérléssel kapcsolatos fontos tudnivalók</h2>
+            <h3>Biztosítás</h3>
+            <p>A bérlőnek lehetősége van biztosítást kötni a gépek védelme érdekében.</p>
+            <p>A biztosítás költsége gépenként eltérő.</p>
+            <hr>
+            <h3>Karbantartás és felelősség</h3>
+            <p>A bérlő köteles gondoskodni a gépek megfelelő használatáról és karbantartásáról.</p>
+            <hr>
+            <h3>Általános szerződési feltételek (ÁSZF)</h3>
+            <p>A bérlési szerződést a gép átvétele előtt személyesen kell aláírni.</p>
+            <hr>
+        </article>
+        <article>
+            <h2>Hírlevél</h2>
+            <p>Friss információk és hírek: Hírlevelük lehetőséget nyújt az előfizetőknek, hogy naprakész információkat
+                kapjanak a cég helyzetéről. A hírlevelré feliratkozva gyorsan és könnyedén informálódhatnak a legújabb
+                gépeinkről, az áraink változásáról, vagy esetleg a nyitvatartás változásáról. Hirlevelünk különösen
+                fontos lehet azon vevők, illetve cégek számára, akik érdeklődnek ez adott iparág iránt.</p>
+            <hr>
+        </article>
+        <article>
+            <form action="http://szamtud.uni-corvinus.hu/receive.php" method="post" id="myform" novalidate>
+                <table class="feliratkozas">
+                    <tr>
+                        <td>
+                            <h2>Feliratkozás a hírlevélre</h2>
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="veznev">Vezetéknév <br>
+                                <input type="text" name="veznev" id="veznev">
+                            </label> <br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="kernev">Keresztnév <br>
+                                <input type="text" name="kernev" id="kernev">
+                            </label> <br></td>
+                    </tr>
+                    <tr>
+                        <td><label>Cég neve (nem kötelező) <br>
+                                <input type="text" name="cegnev">
+                            </label> <br></td>
+                    </tr>
+                    <tr>
+                        <td> <label for="email">Email cím <br>
+                                <input type="email" name="email" id="email">
+                            </label> <br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="telefon">Telefonszám <br>
+                                <input type="tel" name="telefon" id="telefon" value="06-">
+                            </label> <br></td>
+                    </tr>
+                    <tr>
+                        <td><label for="ertesit">Milyen formában szeretne híreinkről értesülni?<br>
+                            Üzenet
+                            <input type="radio" name="ertesit" id="ertesit" value="tel"><br>
+                            Email
+                            <input type="radio" name="ertesit" id="ertesit" value="email">
+                            </label></td>
+                    </tr>
+                    <tr>
+                        <td> <label for="feltetel">Elfogadom a feltételeket
+                                <input type="checkbox" name="feltetel" id="feltetel">
+                            </label> <br></td>
+                    </tr>
+
+                    <tr>
+                        <td><input class="berlesbutton" type="submit" value="Elküld" name="elkuld"></td> <br>
+                    </tr>
+                    <tr>
+                        <td><input class="berlesbutton" type="reset" value="Alaphelyzet" name="alaph"></td> <br>
+                    </tr>
+                </table>
+            </form>
+        </article>
+    </div>
+    <footer>
+        <section>
+            <h3>Elérhetőségek</h3>
+            <p>Telefon: <br><a href="tel:+36209188913">+36-20-918-8913</a></p>
+            <p>E-mail: <br><a href="mailto:hercules@gmail.com"> hercules@gmail.com</a></p>
+
+            <div>
+                <form action="http://szamtud.uni-corvinus.hu/receive.php">
+                    <label>Értékelés: <br>
+                        <textarea name="ertekeles" cols="20" rows="6"></textarea>
+                    </label>
+                    <br>
+                    <input class="mybutton" type="submit" value="Elküld" id="">
+                    <input class="mybutton" type="reset" value="Alaphelyzet" id="">
+                </form>
+            </div>
+            <p><img src="kepekbeadando/logo.jpg" alt="A cég logója"></p>
+            <p>Az oldal nem reprezentál valós vállalatot. - Szántó Vivien Corvinus 2023</p>
+        </section>
+    </footer>
+</body>
+</html>

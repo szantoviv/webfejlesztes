@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Hercules</title>
+    <link rel="icon" href="favicon.jpeg" type="image/x-icon">
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo"><img src="kepekbeadando/logo.jpg" alt="a cég logója"></div>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Rólunk</a></li>
+                <li class="dropdown">
+                    <a id="active" href="" class="dropmenu">Gépeink</a>
+                    <div class="dropdown-content">
+                        <a href="#">Építőipari Gépek</a>
+                        <a href="mezogazd.html">Mezőgazdasági Gépek</a>
+                        <a href="kerteszet.html">Kertészeti Gépek</a>
+                    </div>
+
+                </li>
+                <li><a href="beadando3.html">Elérhetőség</a></li>
+                <li><a href="beadando4.html">Fontos tudnivalók</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <article>
+
+            <div class="hamburgermenu">
+                <a href="#" class="active">Géptípusok</a>
+                <div id="gepfajta">
+                    <a href="#aram">Áramfejlesztő Gépek</a>
+                    <a href="#barkacs">Barkácsgépek</a>
+                    <a href="#beton">Betonbontáshoz Használandó Gépek</a>
+                    <a href="#csempe">Csempevágáshoz Használandó Gépek</a>
+                    <a href="#holeg">Hőlégbefúvók</a>
+                    <a href="#vib">Vibrátorok</a>
+                </div>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+
+        </article>
+        <article>
+            <h2>Építőipari Gépek</h2>
+        </article>
+        <article class="gepek">
+            <header><a id="aram">Áramfejlesztő Gépek</a></header>
+            <section>
+                <img src="kepekbeadando/epitoipari/aramfejlesztok/haromfazisuaramfejleszto.jpeg"
+                    alt="háromfázisú áramfejlesztő">
+                <p>Háromfázisú áramfejlesztő</p>
+                <p>2500Ft/4 óra</p>
+                <p><input class="gepekbutton" type="button" name="háromfázisú áramfejlesztő" id="háromfázisú áramfejlesztő" value="Bérlés"></p>
+            </section>
+            <section>
+                <img src="kepekbeadando/epitoipari/aramfejlesztok/hegesztoaramfejleszto.webp"
+                    alt="hegesztő áramfejlesztő">
+                <p>Hegesztő áramfejlesztő</p>
+                <p>2800Ft/4 óra</p>
+                <p><input class="gepekbutton" type="button" name="hegesztő áramfejlesztő" id="hegesztő áramfejlesztő" value="Bérlés"></p>
+            </section>
+            <section>
+                <p></p>
+                <img src="kepekbeadando/epitoipari/aramfejlesztok/inverteres aramfejleszto.jpeg"
+                    alt="inverteres áramfejlesztő">
+                <p>Inverteres áramfejlesztő</p>
+                <p>2800Ft/4 óra</p>
+                <p><input class="gepekbutton" type="button" name="inverteres áramfejlesztő" id="inverteres áramfejlesztő" value="Bérlés"></p>
+            </section>
+            <section>
+                <img src="kepekbeadando/epitoipari/aramfejlesztok/ketfazisu aramfejleszto.webp"
+                    alt="kétfázisú áramfejlesztő">
+                <p>Kétfázisú áramfejlesztő</p>
+                <p>2500Ft/4 óra</p>
+                <p><input class="gepekbutton" type="button" name="kétfázisú áramfejlesztő" id="kétfázisú áramfejlesztő" value="Bérlés"></p>
+            </section>
+        </article>
+        <article class="gepek">
+            <header><a id="barkacs"></a>Barkácsgépek</header>
+            <section>
+                <img src="kepekbeadando/epitoipari/barkacsgepek/csavarbehajto.jpg" alt="csavarbehajtó">
+                <p>Csavarbehajtó</p>
+                <p>2300Ft/4 óra</p>
+                <p><input class="gepekbutton" type="button" name="csavarbehajtó" id="csavarbehajtó" value="Bérlés"></p>
+            </section>
+            <section>
+                <img src="kepekbeadando/epitoipari/barkacsgepek/dekopirfuresz.jpg" alt="dekopírfűrész">
+                <p>Dekopírfűrész</p>
+                <p>2500Ft/4 óra</p>
+                <p><input class="gepekbutton" type="button" name="dekopirfűrész" id="dekopirfűrész" value="Bérlés"></p>
+            </section>
+            <section>
+                <img src="kepekbeadando/epitoipari/barkacsgepek/deltacsiszolo.webp" alt="deltacsiszoló">
+                <p>Deltacsiszoló</p>
+                <p>2800Ft/4 óra</p>
+                <p><input class="gepekbutton" type="button" name="deltacsiszolo" id="deltacsiszolo" value="Bérlés"></p>
+            </section>
+            <section>
+                <img src="kepekbeadando/epitoipari/barkacsgepek/excentercsiszolo.webp" alt="excentercsiszoló">
+                <p>Excentercsiszoló</p>
+                <p>2300Ft/4 óra</p>
+                <p><input class="gepekbutton" type="button" name="excentercsiszoló" id="excentercsiszoló" value="Bérlés"></p>
+            </section>
+            <section>
+                <img src="kepekbeadando/epitoipari/barkacsgepek/kezigyalu.jpg" alt="kézigyalu">
+                <p>Kézigyalu</p>
+                <p>2800Ft/4 óra</p>
+                <p><input class="gepekbutton" type="button" name="kézigyalu" id="kézigyalu" value="Bérlés"></p>
+            </section>
+            <section>
+                <img src="kepekbeadando/epitoipari/barkacsgepek/korfuresz.jpeg" alt="körfűrész">
+                <p>Körfűrész</p>
+                <p>2800Ft/4 óra</p>
+                <p><input class="gepekbutton" type="button" name="körfűrész" id="körfűrész" value="Bérlés"></p>
+            </section>
+            <section>
+                <img src="kepekbeadando/epitoipari/barkacsgepek/sarokcsiszolo.webp" alt="sarokcsiszoló">
+                <p>Sarokcsiszoló</p>
+                <p>2300Ft/4 óra</p>
+                <p><input class="gepekbutton" type="button" name="sarokcsiszoló" id="sarokcsiszoló" value="Bérlés"></p>
+            </section>
+            <section>
+                <img src="kepekbeadando/epitoipari/barkacsgepek/szablyafuresz.jpeg" alt="szablyafűrész">
+                <p>Szablyafűrész</p>
+                <p>2000Ft/4 óra</p>
+                <p><input class="gepekbutton" type="button" name="szablyafűrész" id="szablyafűrész" value="Bérlés"></p>
+            </section>
+            <section>
+                <img src="kepekbeadando/epitoipari/barkacsgepek/szalagcsiszolo.webp" alt="szalagcsiszoló">
+                <p>Szalagcsiszoló</p>
+                <p>2300Ft/4 óra</p>
+                <p><input class="gepekbutton" type="button" name="szalagcsiszoló" id="szalagcsiszoló" value="Bérlés"></p>
+            </section>
+        </article>
+        <article class="gepek">
+            <header><a id="beton"></a>Betonbontáshoz Használandó Gépek</header>
+            <section>
+                <img src="kepekbeadando/epitoipari/betonbontas/bontokalapacs.jpeg" alt="bontókalapács">
+                <p>Bontókalapács</p>
+                <p>2500Ft/4 óra</p>
+                <p><input class="gepekbutton" type="button" name="bontókalapács" id="bontókalapács" value="Bérlés"></p>
+            </section>
+            <section>
+                <img src="kepekbeadando/epitoipari/betonbontas/furo.jpeg" alt="fúró">
+                <p>Fúró</p>
+                <p>2300Ft/4 óra</p>
+                <p><input class="gepekbutton" type="button" name="fúró" id="fúró" value="Bérlés"></p>
+            </section>
+            <section>
+                <img src="kepekbeadando/epitoipari/betonbontas/furo_veso.jpg" alt="fúróvéső">
+                <p>Fúróvéső</p>
+                <p>2800Ft/4 óra</p>
+                <p><input class="gepekbutton" type="button" name="fúróvéső" id="fúróvéső" value="Bérlés"></p>
+            </section>
+            <section>
+                <img src="kepekbeadando/epitoipari/betonbontas/vesokalapacs.webp" alt="vésőkalapács">
+                <p>Vésőkalapács</p>
+                <p>2800Ft/4 óra</p>
+                <p><input class="gepekbutton" type="button" name="vésőkalapács" id="vésőkalapács" value="Bérlés"></p>
+            </section>
+        </article>
+        <article class="gepek">
+            <header><a id="csempe"></a>Csempevágáshoz Használandó Gépek</header>
+            <section>
+                <img src="kepekbeadando/epitoipari/csempevago/csempevago.webp" alt="csempevágó">
+                <p>Csempevágó</p>
+                <p>2300Ft/4 óra</p>
+                <p><input class="gepekbutton" type="button" name="csempevágó" id="csempevágó" value="Bérlés"></p>
+            </section>
+            <section>
+                <img src="kepekbeadando/epitoipari/csempevago/vizescsempevago.jpeg" alt="vizescsempevágó">
+                <p>Vizescsempevágó</p>
+                <p>2000Ft/4 óra</p>
+                <p><input class="gepekbutton" type="button" name="vizescsempevágó" id="vizescsempevágó" value="Bérlés"></p>
+            </section>
+        </article>
+        <article class="gepek">
+            <header><a id="holeg"></a>Hőlégbefúvók</header>
+            <section>
+                <img src="kepekbeadando/epitoipari/holegbefuvok/aramosholegbefuvo.avif" alt="áramos hőlégbefúvó">
+                <p>Áramos hőlégbefúvó</p>
+                <p>2300Ft4 óra</p>
+                <p><input class="gepekbutton" type="button" name="áramos hőlégbefúvó" id="áramos hőlégbefúvó" value="Bérlés"></p>
+            </section>
+            <section>
+                <img src="kepekbeadando/epitoipari/holegbefuvok/gazolajosholegbefuvo.jpeg" alt="gázolajos hőlégbefúvó">
+                <p>Gázolajos hőlégbefúvó</p>
+                <p>2500Ft/4 óra</p>
+                <p><input class="gepekbutton" type="button" name="gázolajos hőlégbefúvó" id="gázolajos hőlégbefúvó" value="Bérlés"></p>
+            </section>
+            <section>
+                <img src="kepekbeadando/epitoipari/holegbefuvok/gazpalackosholegbefuvo.jpeg"
+                    alt="gázpalackoss hőlégbefúvó">
+                <p>Gázpalackoss hőlégbefúvó</p>
+                <p>2300Ft/4 óra</p>
+                <p><input class="gepekbutton" type="button" name="gázpalackoss hőlégbefúvó" id="gázpalackoss hőlégbefúvó" value="Bérlés"></p>
+            </section>
+        </article>
+        <article class="gepek">
+            <header><a id="vib"></a>Vibrátorok</header>
+            <section>
+                <img src="kepekbeadando/epitoipari/vibratorok/betonsimito.jpeg" alt="betonsimitó">
+                <p>Betonsimitó</p>
+                <p>2800Ft/4 óra</p>
+                <p><input class="gepekbutton" type="button" name="betonsimitó" id="betonsimitó" value="Bérlés"></p>
+            </section>
+            <section>
+                <img src="kepekbeadando/epitoipari/vibratorok/dongolobeka.jpeg" alt="döngölőbéka">
+                <p>Döngölőbéka</p>
+                <p>2800Ft/4 óra</p>
+                <p><input class="gepekbutton" type="button" name="döngölőbéka" id="döngölőbéka" value="Bérlés"></p>
+            </section>
+            <section>
+                <img src="kepekbeadando/epitoipari/vibratorok/lapvibrator.jpeg" alt="lapvibrátor">
+                <p>Lapvibrátor</p>
+                <p>2300Ft/4 óra</p>
+                <p><input class="gepekbutton" type="button" name="lapvibrátor" id="lapvibrátor" value="Bérlés"></p>
+            </section>
+            <section>
+                <img src="kepekbeadando/epitoipari/vibratorok/padkahenger.jpeg" alt="padkahenger">
+                <p>Padkahenger</p>
+                <p>2000Ft/4 óra</p>
+                <p><input class="gepekbutton" type="button" name="padkahenger" id="padkahenger" value="Bérlés"></p>
+            </section>
+            <section>
+                <img src="kepekbeadando/epitoipari/vibratorok/tuvibrator.jpeg" alt="tűvibrátor">
+                <p>Tűvibrátor</p>
+                <p>2300Ft/4 óra</p>
+                <p><input class="gepekbutton" type="button" name="tűvibrátor" id="tűvibrátor" value="Bérlés"></p>
+            </section>
+        </article>
+        <article>
+            <form method="post" action="http://szamtud.uni-corvinus.hu/receive.php">
+                <table class="berles">
+                    <tr>
+                        <td>
+                            <h2>Bérlés</h2>
+                            <hr>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Termék: <br>
+                                <input type="text" name="termek">
+                            </label> <br></td>
+                    </tr>
+                    <tr>
+                        <td><label>Bérlés időtartama: <br>
+                                <select name="berles">
+                                    <option value="1">4 óra</option>
+                                    <option value="2">8 óra</option>
+                                    <option value="3">24 óra</option>
+                                </select> <br>
+                            </label></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Összeg: <br>
+                                <input type="number" name="összeg">
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <label>Bérlés napja: <br>
+                                <input type="date" name="berlesido">
+                            </label> <br></td>
+                    </tr>
+                    <tr>
+                        <td> <label>Bérlés kezdetének időpontja: <br>
+                                <input type="time" name="idopont">
+                            </label> <br></td>
+                    </tr>
+                    <tr>
+                        <td> <label>Név: <br>
+                                <input type="text" name="nev">
+                            </label> <br></td>
+                    </tr>
+                    <tr>
+                        <td><label>Telefonszám: <br>
+                                <input type="tel" name="telefon" value="06-">
+                            </label> <br></td>
+                    </tr>
+                    <tr>
+                        <td> <label>Email cím: <br>
+                                <input type="email" name="email">
+                            </label> <br></td>
+                    </tr>
+                    <tr>
+                        <td> <label>Megjegyzés: <br>
+                                <textarea name="megjegyzes" cols="30" rows="10"></textarea>
+                            </label></td>
+                    </tr>
+                    <tr>
+                        <td><input class="berlesbutton" type="submit" value="Elküld" name="elkuld"></td> <br>
+                    </tr>
+                    <tr>
+                        <td><input class="berlesbutton" type="reset" value="Alaphelyzet" name="alaph"></td> <br>
+                    </tr>
+                </table>
+            </form>
+        </article>
+    </div>
+    <footer>
+        <section>
+            <h3>Elérhetőségek</h3>
+            <p>Telefon: <br><a href="tel:+36209188913">+36-20-918-8913</a></p>
+            <p>E-mail: <br><a href="mailto:hercules@gmail.com"> hercules@gmail.com</a></p>
+
+            <div>
+                <form action="http://szamtud.uni-corvinus.hu/receive.php">
+                    <label>Értékelés: <br>
+                        <textarea name="ertekeles" cols="20" rows="6"></textarea>
+                    </label>
+                    <br>
+                    <input class="mybutton" type="submit" value="Elküld" id="">
+                    <input class="mybutton" type="reset" value="Alaphelyzet" id="">
+                </form>
+            </div>
+            <p><img src="kepekbeadando/logo.jpg" alt="A cég logója"></p>
+            <p>Az oldal nem reprezentál valós vállalatot. - Szántó Vivien Corvinus 2023</p>
+
+        </section>
+    </footer>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("gepfajta");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+    </script>
+    <script src="jsepitoipar.js"></script>
+</body>
+</html>
