@@ -1,0 +1,8 @@
+Az oldal készítője: Szántó Vivien
+URL cím: 
+A weblap témája: A szüleim Hercules Kisgépkölcsönző nevű cégének készítettem egy weboldalt. Ezen a weboldalon nemcsak a cégről lehet információkat találni, hanem már a bérlést is le lehet bonyolítani.
+
+A javascript kód az epitoipar.html, a mezogazd.html és a kerteszet.html oldalon található.
+Az első javascript kód a gépek alatt található Bérlés gombra kattintva a Termék text-be beírja az adott gép nevét. A másik javascript kód a három időtartamból kiválasztva a megfelelő árat beírja az Összeg text-be.
+
+A weblap egészén Abril Fatface betűtipust használtam.

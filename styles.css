@@ -1,0 +1,425 @@
+/*====ALTALANOS====*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Abril Fatface';
+  scroll-behavior: smooth;
+}
+
+body {
+  /*background-color: rgb(174, 182, 191);*/
+  background-color: #ffffff;
+  padding: 0px;
+  margin: 0px;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.container>* {
+  height: fit-content;
+  margin: 1%;
+}
+
+/*====TAGEK====*/
+header {
+  /*flex: 1 1 100%;*/
+  padding: 2px;
+  margin: 0px;
+  text-align: center;
+  font-size: 1.5em;
+  color: #ffffff;
+  background-color: #0b173d;
+
+}
+
+header img {
+  /*display: inline-block;*/
+  height: 150px;
+}
+
+article {
+  flex: 1 1 100%;
+  /*margin: 8px;*/
+  /*background-color: rgb(58, 62, 75);*/
+  background-color: #273258;
+  padding: 0px 8px;
+  color: #ffffff;
+  text-align: justify;
+  border-radius: 15px;
+}
+
+footer {
+  margin-top: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  align-items: center;
+}
+
+footer {
+  background-color: #273258;
+}
+
+footer section {
+  flex: 1 1 100%;
+  margin: 5px;
+  background-color: #273258;
+  padding: 0px 8px;
+  color: #ffffff;
+  text-align: center;
+}
+
+footer section img {
+  width: 100%;
+}
+
+footer section a {
+  color: #ffffff;
+}
+
+footer section h3 {
+  background-color: #0b173d;
+  padding: 5px 0 5px 0;
+  border-radius: 15px;
+}
+
+/*====MENU====*/
+.menu {
+  flex: 1 1 100%;
+  overflow: hidden;
+  background-color: #0b173d;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  /*overflow: hidden;*/
+}
+
+.menu a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 8px;
+  text-decoration: none;
+}
+#active{
+  border-radius: 10px;
+  background-color: #B58E0D;
+}
+
+/*====DROPDOWN MENU====*/
+.dropdown {
+  display: inline-block;
+  /*position: relative;*/
+}
+
+.dropdown .dropmenu {
+  border: none;
+  outline: none;
+  color: white;
+  padding: 8px;
+  margin: 0;
+  border-radius: 10px;
+}
+
+.menu a:hover,
+.dropdown:hover .dropmenu {
+  border-radius: 10px;
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown-content {
+  border-radius: 10px;
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  display: none;
+  overflow: auto;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/*====HAMBURGER MENU====*/
+.hamburgermenu {
+  overflow: hidden;
+  background-color: #273258;
+  position: relative;
+  border-radius: 15px;
+}
+
+.hamburgermenu #gepfajta {
+  display: none;
+}
+
+.hamburgermenu a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.hamburgermenu a.icon {
+  background-color: #273258;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.hamburgermenu a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #0b173d;
+  color: white;
+}
+
+/*====KEPEK====*/
+.gepek img {
+  /*height: 200px;
+  width: 200px;*/
+  width: 100%;
+  height: 250px;
+  /*transition: width 3s, height 3s;*/
+}
+
+/*.gepek img:hover{
+  width: 300px;
+  height: 300px;
+}*/
+.uzletfoto {
+  width: 100%;
+}
+
+/*====LEUGRO LISTA====*/
+.gepcsoportok {
+  list-style-type: none;
+}
+
+.gepcsoportok li a {
+  list-style-type: none;
+  color: #ffffff;
+  line-height: 1.5em;
+  text-decoration: none;
+  display: block;
+  padding: 5px;
+  border-radius: 10px;
+  background-color: #0b173d;
+  margin: 5px;
+  width: 100%;
+}
+
+.gepcsoportok li a:hover {
+  background-color: rgb(150, 166, 181);
+}
+
+/*====TERKEP====*/
+.terkep {
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+  min-height: 40vmax;
+}
+
+.utvonal {
+  text-align: center;
+}
+
+.utvonal a {
+  color: #ffffff;
+}
+
+/*====NYITVATARTAS TABLAZAT====*/
+.nyitvatartas {
+  width: 100%;
+}
+
+.nyitvatartas tr td {
+  text-align: center;
+}
+
+.sotetsor {
+  background-color: #273258;
+}
+
+.vilagossor {
+  background-color: #4f5d90;
+}
+
+/*====BERLES, FELIRATKOZAS TABLAZAT====*/
+.berles, .feliratkozas{
+  width: 100%;
+  text-align: center;
+}
+
+/*====BERLES GOMB====*/
+input.berlesbutton {
+  background-color: #B58E0D;
+  color: #ffffff;
+  padding: 5px 8px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+/*====LABLEC GOMB====*/
+input.mybutton {
+  background-color: #0b173d;
+  color: white;
+  padding: 5px 8px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+/*====FOTOALBUM====*/
+.galleria {
+  margin: auto;
+  width: 80vw;
+  height: 70vw;
+}
+
+.galleria-container{
+  background-color: #0b173d;
+}
+
+/*====GEPEK====*/
+.gepek section p {
+  text-align: center;
+  /* A szöveg középre igazítása */
+  margin-top: 10px;
+  /* Távolság az előző sectiontól */
+}
+.gepek header{
+  border-radius: 10px;
+}
+.gepek section img {
+  display: block;
+  margin-top: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 320px;
+  height: 320px;
+}
+.gepekbutton {
+  background-color: #0b173d;
+  color: white;
+  padding: 5px 8px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+
+@media all and (min-width: 600px) {
+
+  .menu li {
+  float: left;
+}
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-basis: 100%;
+    justify-content: space-around;
+  }
+
+  nav ul li {
+    width: 23%;
+  }
+  footer section img {
+    width: 20%;
+  }
+
+  .gepek img {
+    width: 250px;
+    height: 250px;
+    transition: transform 2s;
+}
+
+.gepek img:hover {
+    transform: scale(1.1); /* Növelés 20%-kal a kép aktuális méretéhez képest */
+}
+
+  .gepcsoportok li a {
+    width: 40%;
+  }
+
+  .uzletfoto {
+    width: 450px;
+    display: block;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+  }
+  .gepek section img {
+    display: block;
+    margin: auto;
+  }
+  .gepek section {
+    width: 45%;
+    /* A sectionok szélessége */
+    float: left;
+    /* A sectionok egymás mellé helyezése */
+    margin: 10px;
+    /* Távolság az elemek között */
+  }
+  .nyitvatartas{
+    width: 50%;
+    margin: auto;
+  }
+  h2{
+    text-align: center;
+  }
+  .galleria {
+    border-radius: 10px;
+    margin: 15px;
+    width: 50vw;
+    height: 40vw;
+}
+.galleria-container{
+  border-radius: 10px;
+  margin: auto;
+}
+
+}
+
+@media all and (min-width: 768px) {
+  .dropdown-content {
+    min-width: 340px;
+  }
+
+
+}
